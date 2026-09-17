@@ -10,12 +10,12 @@
 <body>
 <header class="topbar"><div><h1>GeoEdu Portal <span>UFMA</span></h1><p>Plataforma Acadêmica de Geotecnologias</p></div><div class="courses">Geoprocessamento <b>·</b> Sensoriamento Remoto <b>·</b> Análise Espacial</div></header>
 <main class="app"><aside id="sidebar" class="sidebar">
-<section><h2>Dados de Referência</h2><label><input id="layer-municipios" type="checkbox" checked> Municípios do Maranhão — IBGE 2025</label><label><input id="layer-campus" type="checkbox" checked> Campus — demonstração</label></section>
+<section><h2>Dados de Referência</h2><label><input id="layer-maranhao" type="checkbox" checked> Limite do Maranhão — IBGE 2025</label><label><input id="layer-municipios" type="checkbox" checked> Municípios do Maranhão — IBGE 2025</label><label><input id="layer-campus" type="checkbox" checked> Campus — demonstração</label></section>
 <section><h2>Mapas-base</h2><label><input name="basemap" type="radio" value="osm" checked> OpenStreetMap</label><label><input name="basemap" type="radio" value="light"> Carto Light</label></section>
 <section><h2>Ferramentas</h2><button id="btn-home">⌂ Extensão do Maranhão</button><button id="btn-measure">↔ Medir distância</button><button id="btn-clear">× Limpar medição</button><button id="btn-geoai">✦ GeoAI <small>em preparação</small></button></section>
-<section class="info"><h2>Fonte dos dados</h2><p><strong>Municípios:</strong> IBGE, Malha Municipal 2025. Geometria preparada para visualização WebGIS.</p><p><strong>Dica:</strong> clique em um município para consultar seus atributos.</p></section>
+<section class="info"><h2>Fonte dos dados</h2><p><strong>Limite estadual e municípios:</strong> IBGE, Malha Territorial 2025. Geometrias preparadas para visualização WebGIS.</p><p><strong>Dica:</strong> clique nas feições para consultar seus atributos.</p></section>
 </aside><section class="map-wrap"><button id="menu-toggle">☰</button><div id="map"></div><div id="coords">Lat: — | Long: —</div></section></main>
-<footer><span>GeoEdu Portal UFMA · v1.1A</span><span>Leaflet · GeoJSON · IBGE 2025</span></footer>
+<footer><span>GeoEdu Portal UFMA · v1.1B</span><span>Leaflet · GeoJSON · IBGE 2025</span></footer>
 <div id="modal" class="modal" hidden><div class="modal-card"><button id="modal-close" class="close">×</button><h2>GeoAI</h2><p>Área reservada para futura integração segura com OpenAI e consultas geoespaciais.</p><p><strong>Segurança:</strong> chaves de API nunca devem ser armazenadas no JavaScript público.</p></div></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="js/map.js"></script>
 </body></html>
